@@ -150,7 +150,7 @@ if(plotInd){
     pdf("/Users/Viktualia/Dropbox/Projects/008_LionSexDiffMort/JuliaLions/plots/hwange04Nov.pdf")
   }
   
-  keep <- seq(15001, niter, 20)
+#  keep <- seq(15001, niter, 20)
   parMat <- out[[1]]$pars[keep, ]
   for (i in 2:nsim) {
     parMat <- rbind(parMat, out[[i]]$pars[keep, ])
